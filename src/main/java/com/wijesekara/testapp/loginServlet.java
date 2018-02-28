@@ -46,8 +46,8 @@ public class loginServlet extends HttpServlet {
             final RegisterSiteParams commandParams = new RegisterSiteParams();
             commandParams.setOpHost("https://accounts.google.com");
             commandParams.setAuthorizationRedirectUri("https://client.myexamples.com:8443/testapp/welcome");
-            commandParams.setClientId("237882107417-amlljkau52q3ejkt2i7mtuun88qjt88b.apps.googleusercontent.com");
-            commandParams.setClientSecret("i0FCRUE0ZyCyNBnNnprpo6Bi");
+            commandParams.setClientId("<client-id-here>");
+            commandParams.setClientSecret("<client-secret-here>");
             //commandParams.setPostLogoutRedirectUri(postLogoutRedirectUrl);
             //commandParams.setClientLogoutUri(Lists.newArrayList(logoutUri));
             commandParams.setScope(newArrayList("openid","profile"));
@@ -70,8 +70,8 @@ public class loginServlet extends HttpServlet {
             updParams.setOxdId(currentOxdId);
             updParams.setClientSecretExpiresAt(calendar.getTime());
             updParams.setScope(newArrayList("openid","profile"));
-            updParams.setClientId("237882107417-amlljkau52q3ejkt2i7mtuun88qjt88b.apps.googleusercontent.com");
-            updParams.setClientSecret("i0FCRUE0ZyCyNBnNnprpo6Bi");
+            updParams.setClientId("<client-id>");
+            updParams.setClientSecret("<client-secret>");
             
             
             

@@ -43,10 +43,6 @@ public class loginCeDev extends HttpServlet {
             final RegisterSiteParams commandParams = new RegisterSiteParams();
             commandParams.setOpHost("https://ce-dev.gluu.org");
             commandParams.setAuthorizationRedirectUri("http://localhost:8080/testapp/welcome");
-           // commandParams.setClientId("237882107417-amlljkau52q3ejkt2i7mtuun88qjt88b.apps.googleusercontent.com");
-            //commandParams.setClientSecret("i0FCRUE0ZyCyNBnNnprpo6Bi"); 
-            //commandParams.setPostLogoutRedirectUri(postLogoutRedirectUrl);
-            //commandParams.setClientLogoutUri(Lists.newArrayList(logoutUri));
             commandParams.setScope(newArrayList("openid"));
             
             final Command command = new Command(CommandType.REGISTER_SITE);

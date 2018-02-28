@@ -60,8 +60,8 @@ public class oauth2client extends HttpServlet {
             OAuthClientRequest accessRequest = OAuthClientRequest.
                     tokenLocation("https://localhost:9443/oauth2/token")
                     .setGrantType(GrantType.AUTHORIZATION_CODE)
-                    .setClientId("oEUDFtKVUAU7L2knLDstGWUpvOga")
-                    .setClientSecret("mZ3yu48ma24_USs4wecr309rSxMa")
+                    .setClientId("<client-id>")
+                    .setClientSecret("<client-secret>")
                     .setRedirectURI("http://localhost:8080/testapp/oauth2client")
                     .setCode(code)
                     .buildBodyMessage();
